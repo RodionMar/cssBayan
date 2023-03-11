@@ -1,0 +1,49 @@
+@media screen and (min-width: 1920px) {
+   h1{
+      font-size: 2.083vw;
+      margin-bottom: 0.81vw;
+   }
+
+   h2{
+      font-size: 1.250vw;
+   }
+
+   .container{
+      width: 57.292vw;
+      margin-top: 5.208vw;
+   }
+
+   .container-main-block{
+      color: blue;
+   }
+
+   .container-main-block:hover{
+      color: #000;
+   }
+
+   .accordion-block{
+      display: grid;
+   }
+
+   .accordion-block:hover{
+      cursor: pointer;
+   }
+
+   .accordion-block-title{
+      border-top: 0.052vw solid lightgray;
+      padding-top: 0.781vw;
+      margin-bottom: 0.781vw;
+   }
+
+   .accordion-block-button{
+      width: 1.21vw;
+      height: 1.21vw;
+   }
+
+
+   .accordion-block-image{
+      justify-self: center;
+   }
+
+
+}
