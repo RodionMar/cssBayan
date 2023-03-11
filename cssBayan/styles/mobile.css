@@ -17,9 +17,9 @@
       color: blue;
    }
 
-   .container-main-block:hover{
+   /* .container-main-block:hover{
       color: #000;
-   }
+   } */
 
    .accordion-block{
       display: grid;
@@ -39,13 +39,13 @@
    .accordion-block-image{
       justify-self: center;
    }
-
+/* 
    .accordion-block:hover > .accordion-block-image{
       width: 26.042vw;
       height: 26.042vw;
       margin-top: 0.781vw;
       margin-bottom: 0.781vw;
-   }
+   } */
 
    #first-accordion-button:checked ~ .first-accordion-block-image,
    #second-accordion-button:checked ~ .second-accordion-block-image,
