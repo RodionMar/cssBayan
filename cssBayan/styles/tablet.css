@@ -17,9 +17,9 @@
       color: blue;
    }
 
-   .container-main-block:hover{
+   /* .container-main-block:hover{
       color: #000;
-   }
+   } */
 
    .accordion-block{
       display: grid;
