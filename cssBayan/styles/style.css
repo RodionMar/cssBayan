@@ -1,0 +1,116 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background: rgba(246,246,236,255);
+}
+
+h1{
+   font-weight: 700;
+   line-height: 120%;
+}
+
+h2{
+   font-weight: 700;
+   line-height: 120%;
+}
+
+input{
+   display: none;
+}
+
+.container{
+   margin: auto;
+   box-sizing: border-box;
+   padding-right: 0.781vw;
+   padding-left: 0.781vw;
+}
+
+.accordion-block-title{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#first-accordion-button:checked ~ .accordion-block-title,
+#second-accordion-button:checked ~ .accordion-block-title,
+#third-accordion-button:checked ~ .accordion-block-title,
+#fourth-accordion-button:checked ~ .accordion-block-title,
+#fifth-accordion-button:checked ~ .accordion-block-title{
+   color: #000;
+}
+
+#first-accordion-button:active ~ .accordion-block-title,
+#second-accordion-button:active ~ .accordion-block-title,
+#third-accordion-button:active ~ .accordion-block-title,
+#fourth-accordion-button:active ~ .accordion-block-title,
+#fifth-accordion-button:active ~ .accordion-block-title{
+   color: blue;
+}
+
+.accordion-block-button{
+   display: none;
+   background: url(../assets/icons/png-transparent-computer-icons-christian-cross-icon-design-christian-cross-thumbnail.svg);
+   background-size: cover;
+   background-position: center;
+   transform: rotate(45deg);
+   transition: 0.8s;
+}
+
+.container-main-block:hover .accordion-block-button{
+   display: block;
+}
+
+.accordion-block-image{
+   height: 0;
+   width: 0;
+   transition: 0.8s;
+}
+
+.accordion-block:hover > .accordion-block-image{
+   width: 26.042vw;
+   height: 26.042vw;
+   margin-top: 0.781vw;
+   margin-bottom: 0.781vw;
+}
+
+.accordion-block:hover .accordion-block-title .accordion-block-button{
+   transform: rotate(0deg);
+} 
+
+#first-accordion-button:checked ~ .accordion-block-title .accordion-block-button,
+#second-accordion-button:checked ~ .accordion-block-title .accordion-block-button,
+#third-accordion-button:checked ~ .accordion-block-title .accordion-block-button,
+#fourth-accordion-button:checked ~ .accordion-block-title .accordion-block-button,
+#fifth-accordion-button:checked ~ .accordion-block-title .accordion-block-button{
+   transform: rotate(0deg);
+}
+
+#first-accordion-button:checked ~ .first-accordion-block-image,
+#second-accordion-button:checked ~ .second-accordion-block-image,
+#third-accordion-button:checked ~ .third-accordion-block-image,
+#fourth-accordion-button:checked ~ .fourth-accordion-block-image,
+#fifth-accordion-button:checked ~ .fifth-accordion-block-image{
+   width: 26.042vw;
+   height: 26.042vw;
+   margin-top: 0.781vw;
+   margin-bottom: 0.781vw;
+}
+
+.accordion-block-image img{
+   width: 0;
+   height: 0;
+   transition: 0.8s;
+}
+
+.accordion-block:hover > .accordion-block-image img{
+   width: 100%;
+   height: 100%;
+}
+
+#first-accordion-button:checked ~ .first-accordion-block-image img,
+#second-accordion-button:checked ~ .second-accordion-block-image img,
+#third-accordion-button:checked ~ .third-accordion-block-image img,
+#fourth-accordion-button:checked ~ .fourth-accordion-block-image img,
+#fifth-accordion-button:checked ~ .fifth-accordion-block-image img{
+   width: 100%;
+   height: 100%;
+}
