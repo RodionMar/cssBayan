@@ -1,0 +1,60 @@
+@media screen and (max-width: 820px) {
+   h1{
+      font-size: 5.083vw;
+      margin-bottom: 1.481vw;
+   }
+
+   h2{
+      font-size: 3vw;
+   }
+
+   .container{
+      width: 57.292vw;
+      margin-top: 6.208vw;
+   }
+
+   .container-main-block{
+      color: blue;
+   }
+
+   .container-main-block:hover{
+      color: #000;
+   }
+
+   .accordion-block{
+      display: grid;
+   }
+
+   .accordion-block-title{
+      border-top: 0.062vw solid lightgray;
+      padding-top: 1.781vw;
+      margin-bottom: 1.781vw;
+   }
+
+   .accordion-block-button{
+      width: 2.5vw;
+      height: 2.5vw;
+   }
+
+   .accordion-block-image{
+      justify-self: center;
+   }
+
+   .accordion-block:hover > .accordion-block-image{
+      width: 26.042vw;
+      height: 26.042vw;
+      margin-top: 0.781vw;
+      margin-bottom: 0.781vw;
+   }
+
+   #first-accordion-button:checked ~ .first-accordion-block-image,
+   #second-accordion-button:checked ~ .second-accordion-block-image,
+   #third-accordion-button:checked ~ .third-accordion-block-image,
+   #fourth-accordion-button:checked ~ .fourth-accordion-block-image,
+   #fifth-accordion-button:checked ~ .fifth-accordion-block-image{
+      width: 26.042vw;
+      height: 26.042vw;
+      margin-top: 0.781vw;
+      margin-bottom: 2vw;
+   }
+}
