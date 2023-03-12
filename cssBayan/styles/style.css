@@ -77,15 +77,6 @@ svg{
    fill: blue;
 }
 
-/* .accordion-block-button{
-   display: none;
-   background: url(../assets/icons/png-transparent-computer-icons-christian-cross-icon-design-christian-cross-thumbnail.svg);
-   background-size: cover;
-   background-position: center;
-  
-   transition: 0.8s;
-} */
-
 .accordion-block-image{
    height: 0;
    width: 0;
