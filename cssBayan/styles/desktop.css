@@ -56,7 +56,7 @@
       margin-bottom: 0.781vw;
    }
    
-   .accordion-block:hover .accordion-block-title .accordion-block-button{
+   .accordion-block:hover .accordion-block-title .accordion-block-button svg{
       transform: rotate(0deg);
    }
 

@@ -28,6 +28,7 @@ input{
    display: flex;
    align-items: center;
    justify-content: space-between;
+   transition: 0.8s;
 }
 
 #first-accordion-button:checked ~ .accordion-block-title,
@@ -46,14 +47,44 @@ input{
    color: blue;
 }
 
-.accordion-block-button{
+#first-accordion-button:active ~ .accordion-block-image,
+#second-accordion-button:active ~ .accordion-block-image,
+#third-accordion-button:active ~ .accordion-block-image,
+#fourth-accordion-button:active ~ .accordion-block-image,
+#fifth-accordion-button:active ~ .accordion-block-image{
+   opacity: 0.8;
+}
+
+.accordion-block-button {
+   display: none;
+   width: 1.21vw;
+   height: 1.21vw;
+}
+
+svg{
+   width: 100%;
+   height: 100%;
+   fill: #000;
+   transform: rotate(45deg);
+   transition: 0.8s;
+}
+
+#first-accordion-button:active ~ .accordion-block-title .accordion-block-button svg,
+#second-accordion-button:active ~ .accordion-block-title .accordion-block-button svg,
+#third-accordion-button:active ~ .accordion-block-title .accordion-block-button svg,
+#fourth-accordion-button:active ~ .accordion-block-title .accordion-block-button svg,
+#fifth-accordion-button:active ~ .accordion-block-title .accordion-block-button svg{
+   fill: blue;
+}
+
+/* .accordion-block-button{
    display: none;
    background: url(../assets/icons/png-transparent-computer-icons-christian-cross-icon-design-christian-cross-thumbnail.svg);
    background-size: cover;
    background-position: center;
-   transform: rotate(45deg);
+  
    transition: 0.8s;
-}
+} */
 
 .accordion-block-image{
    height: 0;
